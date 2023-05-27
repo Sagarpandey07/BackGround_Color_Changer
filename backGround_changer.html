@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BackGround changer</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding: 20px 100px;
+		}
+		h1
+		{
+			text-align: center;
+			text-decoration: underline;
+		}
+		img{
+			width: 100%;
+			height: auto;
+			margin: auto;
+		}
+		p
+		{
+			font-size: 25px;
+			font-weight: bold;
+			font-style: italic;
+			text-align: justify;
+		}
+		.btn{
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			border:2px solid black;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		#color-switcher{
+			text-align: right;
+		}
+		#white{
+
+background-color: white;
+		}
+		#aqua{
+background-color: aqua;
+		}
+		#voilet{
+background-color: violet;
+		}
+		#black{
+background-color: black;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="color-switcher">
+		<span class="btn" id="white"onclick="changerBg('white')">     </span>       
+		<span class="btn" id="aqua" onclick="changerBg('aqua')">              </span>
+		<span class="btn" id="crimson" onclick="changerBg('crimson')">              </span>
+		<span class="btn" id="black" onclick="changerBg('black')" >               </span>
+		
+	</div>
+	<h1 id="about">ABout us </h1>
+		<img src="C:\Users\CHANDAN PANDEY\OneDrive\Pictures\Saved Pictures\hero-bg.png" alt="">
+<p  id="para">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laboru
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+</p>
+<script type="text/javascript">
+
+function changerBg(color){
+	document.body.style.backgroundColor = color;
+	//let txt = document.getElementById('white');
+	if(color == "black")
+	{
+		//for(let elm of txt )
+		/*	for(let elm =0;elm < txt.length-1 ;elm++)
+		{
+			elm.style.color="white";
+		}*/
+		txt=document.getElementById('about').style.color='white';
+		txt=document.getElementById('para').style.color='white';
+	//	txt.innerHTML='white';
+	}
+	else
+	{
+	txt=document.getElementById('about').style.color='black';
+		txt=document.getElementById('para').style.color=	"black";
+	}
+}
+
+</script>
+</body>
+</html>

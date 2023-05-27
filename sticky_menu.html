@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sticky menu bar</title>
+    <style type="text/css">
+      body {
+        margin: 0px;
+      }
+      .Com_name {
+        font-style: italic;
+        font-size: 4em;
+        background: -webkit-linear-gradient(#ba2929, #122a92);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      #header {
+        text-align: center;
+      }
+      #logo {
+        width: 250px;
+        height: auto;
+      }
+      #menu-bar {
+        text-align: center;
+        background-color: rgb(11, 24, 165);
+      }
+      #menu-bar li {
+        display: inline-block;
+        padding: 15px 18px;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      #container {
+        text-align: center;
+        margin: 00px 50px;
+        overflow: none;
+      }
+      #about-img {
+        width: 90%;
+      }
+      .sticky {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="Com_name">SAGAR</h1>
+    </div>
+    <nav id="menu-bar">
+      <li>Home</li>
+      <li>About us</li>
+      <li>Our team</li>
+      <li>Client</li>
+      <li>Contact us</li>
+    </nav>
+
+    <div id="container">
+      <h1>about us</h1>
+      <img id="about-img" src="D:\javascriptProgram\image\aboutUs" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.> Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt Lorem ipsum dolor
+        sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+        enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt
+      </p>
+    </div>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        let navbar = document.getElementById("menu-bar");
+        if (window.pageYOffset >= 144) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      });
+    </script>
+  </body>
+</html>
